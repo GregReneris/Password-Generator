@@ -16,10 +16,12 @@ margin-right: auto;
 
     background-color: white;
     border-style: solid;
-    border-color: whitesmoke;
-    margin-right: 5vh;
-    margin-left: 5vh;
+    border-color: white;
+    margin-right: 5vw;
+    margin-left: 5vw;
     padding-bottom: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
 
 }
 
@@ -28,18 +30,25 @@ margin-right: auto;
 #password{
 
     border-color: lightgrey;
-    border-style: dotted;
+    border-style: dashed;
     border-width: 2px;
+    /* margin: auto; */
+    resize: none;
+    width: 99%;
+    height: 100%;
+    /* box-sizing: border-box; not useful*/
+    /* margin-left: 5vh;
+    margin-right: 5vh; */
 
 }
 
 #hrid {
 
-    margin-left: 5vh;
+    /* margin-left: 5vh;
     margin-right: 5vh;
-/* 
-    padding-left: 5vh;
-    padding-right: 5vh; */
+/*  */
+    /* padding-left: 5vh;
+    padding-right: 5vh;  */
 
 }
 
@@ -76,7 +85,7 @@ margin-right: auto;
 .bottombuttons {
 
     color: violet;
-    border: solid;
+    border: none;
     border-width: 2px;
     margin-left: 5vh;
     margin-right: 5vh;
