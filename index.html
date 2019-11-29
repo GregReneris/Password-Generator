@@ -4,34 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
-  </head>
-  <body>
-    <header>
-      <h1>Password Generator</h1>
-    </header>
-    <h2>Generate a Password</h2>
+
     
-    <input type="checkbox" id="SpecialCharacters" checked> Special Characters  <br>
-    <input type="checkbox" id="UpperCase" checked> Upper Case <br>
-    <input type="checkbox" id="LowerCase" checked> Lower Case <br>
-    <input type="checkbox" id="NumeRick" checked> Numbers <br>
-
-    Password Length: <input type="number" min="8" max="32" id="PasswordLength"/> <br>
     
+</head>
+<body>
+    <div class="alignment">    
+        <header>
+            <h1>Password Generator</h1>
+        </header>
+        <div class="innerbox">
+        <h2>Generate a Password</h2>
+        
+<!-- class charbutton not behaving as expected. Doesn't add formatting, could be a weird interaction on checkbox.According to internet checkboxes cannot have properties. therefore put them in things that CAN have properties. -->
 
-    <br><textarea
-      readonly
-      id="password"
-      placeholder="Your Secure Password"
-      aria-label="Generated Password"
-    ></textarea> <br>
-    <button id="generate" onclick="writePassword()">Generate Password</button>
-    <button id="copy" onclick="copyToClipboard()">
-      Copy to Clipboard
-    </button>
+        <div class="charbutton"> <input type="checkbox" id="SpecialCharacters" checked> Special Characters </div>   
+        <div class="charbutton"> <input type="checkbox" id="UpperCase" checked> Upper Case </div>
+        <div class="charbutton"><input type="checkbox" id="LowerCase" checked> Lower Case  </div>
+        <div class="charbutton"><input type="checkbox" id="NumeRick" checked> Numbers  </div> 
+        <br>
+        <div class="pwinput">Password Length: <input type="number" min="8" max="32" id="PasswordLength"/> </div> <br>
+        <hr id="hrid">
+        
+        
+        <br>
+        <div class="textborder">
 
+            <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+            ></textarea> 
+        </div>
+        <hr id="hrid"><br>
+        
+        <div class="bottombuttons">
 
+            <button id="generate" onclick="writePassword()">Generate Password</button>
+            <button id="copy" onclick="copyToClipboard()">
+                    Copy to Clipboard
+                </button>
+        </div>
+            
+            
+
+        </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
